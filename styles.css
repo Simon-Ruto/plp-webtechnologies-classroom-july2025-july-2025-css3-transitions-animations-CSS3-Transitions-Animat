@@ -1,0 +1,57 @@
+body{
+    background-color: papayawhip;
+}
+
+/*  PART 1*/
+.button-1{
+ background-color:blue;
+ color: black;
+ font-style: 18px;
+ padding: 10px;
+ border-radius: 20px;
+ cursor: pointer;
+ transition:background-color 5s ease-in-out ;
+
+}
+
+.button-1:hover{
+    background-color:violet;
+}
+
+.rectangle{
+    background-color:yellowgreen;
+    width: 50px;
+    height: 30px;
+    margin-top: 30px;
+    animation: bounce 3s ease-in-out 2s 4 normal ;
+}    
+
+@keyframes bounce{
+    0%,100%{
+        transform: translateX(0);
+    }
+    40%{transform: translateX(500px);}
+    70%{transform: translateY(-100px);}
+}
+
+/* Part 3: Combining CSS Animations with JavaScript*/
+
+.box{
+    width: 200px;
+    height: 200px;
+    background-color:mediumaquamarine;
+    margin-bottom: 30px;
+    opacity: 0;
+    transition: opacity 3s;
+}
+
+
+.box.animate{
+    opacity: 1;
+    animation: moveRight 2s ease-in-out;
+}
+
+@keyframes moveRight{
+    0%{transform: translateX(0);}
+    100%{transform: translateX(300px);}
+}
